@@ -8,9 +8,9 @@ import (
 	"github.com/spf13/cobra"
 	"software.sslmate.com/src/go-pkcs12"
 
-	"github.com/anchore/quill/internal/bus"
-	"github.com/anchore/quill/internal/redact"
-	"github.com/anchore/quill/quill/pki/load"
+	"github.com/goreleaser/quill/internal/bus"
+	"github.com/goreleaser/quill/internal/redact"
+	"github.com/goreleaser/quill/quill/pki/load"
 )
 
 func loadP12Interactively(p12Path, password string) (*load.P12Contents, error) {

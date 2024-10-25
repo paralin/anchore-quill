@@ -11,8 +11,8 @@ import (
 
 	"github.com/go-restruct/restruct"
 
-	"github.com/anchore/quill/internal/log"
-	"github.com/anchore/quill/quill/macho"
+	"github.com/goreleaser/quill/internal/log"
+	"github.com/goreleaser/quill/quill/macho"
 )
 
 func generateCodeDirectory(id string, hasher hash.Hash, m *macho.File, flags macho.CdFlag, specialSlots []SpecialSlot) (*macho.Blob, error) {

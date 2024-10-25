@@ -7,9 +7,9 @@ import (
 
 	"github.com/anchore/clio"
 	"github.com/anchore/fangs"
-	"github.com/anchore/quill/cmd/quill/cli/options"
-	"github.com/anchore/quill/internal/bus"
-	"github.com/anchore/quill/internal/log"
+	"github.com/goreleaser/quill/cmd/quill/cli/options"
+	"github.com/goreleaser/quill/internal/bus"
+	"github.com/goreleaser/quill/internal/log"
 )
 
 var _ fangs.FlagAdder = &signAndNotarizeConfig{}

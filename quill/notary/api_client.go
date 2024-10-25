@@ -17,7 +17,7 @@ import (
 	awsSession "github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
 
-	"github.com/anchore/quill/internal/log"
+	"github.com/goreleaser/quill/internal/log"
 )
 
 type api interface {

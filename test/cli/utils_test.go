@@ -16,7 +16,7 @@ import (
 
 	"github.com/gookit/color"
 
-	"github.com/anchore/quill/test/trait"
+	"github.com/goreleaser/quill/test/trait"
 )
 
 const defaultShowOutput = false

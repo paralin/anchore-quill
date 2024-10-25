@@ -7,9 +7,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/anchore/quill/internal/log"
-	"github.com/anchore/quill/quill/pki/certchain"
-	"github.com/anchore/quill/quill/pki/load"
+	"github.com/goreleaser/quill/internal/log"
+	"github.com/goreleaser/quill/quill/pki/certchain"
+	"github.com/goreleaser/quill/quill/pki/load"
 )
 
 var _ certchain.Searcher = (*keychainSearcher)(nil)

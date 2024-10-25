@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/anchore/quill/internal/redact"
+	"github.com/goreleaser/quill/internal/redact"
 )
 
 func FormatPositionalArgsHelp(args map[string]string) string {

@@ -10,11 +10,11 @@ import (
 	"software.sslmate.com/src/go-pkcs12"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/quill/cmd/quill/cli/options"
-	"github.com/anchore/quill/internal/bus"
-	"github.com/anchore/quill/internal/log"
-	"github.com/anchore/quill/quill/pki/apple"
-	"github.com/anchore/quill/quill/pki/certchain"
+	"github.com/goreleaser/quill/cmd/quill/cli/options"
+	"github.com/goreleaser/quill/internal/bus"
+	"github.com/goreleaser/quill/internal/log"
+	"github.com/goreleaser/quill/quill/pki/apple"
+	"github.com/goreleaser/quill/quill/pki/certchain"
 )
 
 type p12AttachChainConfig struct {

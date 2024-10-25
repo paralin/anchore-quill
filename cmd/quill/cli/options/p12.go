@@ -2,7 +2,7 @@ package options
 
 import (
 	"github.com/anchore/fangs"
-	"github.com/anchore/quill/internal/redact"
+	"github.com/goreleaser/quill/internal/redact"
 )
 
 var _ interface {

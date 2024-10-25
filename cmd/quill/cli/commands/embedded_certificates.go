@@ -8,8 +8,8 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/quill/internal/bus"
-	"github.com/anchore/quill/quill/pki/apple"
+	"github.com/goreleaser/quill/internal/bus"
+	"github.com/goreleaser/quill/quill/pki/apple"
 )
 
 func EmbeddedCerts(app clio.Application) *cobra.Command {

@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/anchore/clio"
-	"github.com/anchore/quill/cmd/quill/cli"
-	"github.com/anchore/quill/internal"
+	"github.com/goreleaser/quill/cmd/quill/cli"
+	"github.com/goreleaser/quill/internal"
 )
 
 const valueNotProvided = "[not provided]"

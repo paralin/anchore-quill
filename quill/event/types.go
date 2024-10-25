@@ -7,7 +7,7 @@ package event
 import (
 	"github.com/wagoodman/go-partybus"
 
-	"github.com/anchore/quill/internal"
+	"github.com/goreleaser/quill/internal"
 )
 
 const (

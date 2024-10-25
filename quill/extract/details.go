@@ -8,8 +8,8 @@ import (
 
 	blacktopMacho "github.com/blacktop/go-macho"
 
-	"github.com/anchore/quill/internal/log"
-	"github.com/anchore/quill/quill/macho"
+	"github.com/goreleaser/quill/internal/log"
+	"github.com/goreleaser/quill/quill/macho"
 )
 
 type Details struct {

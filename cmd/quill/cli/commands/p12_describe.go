@@ -9,8 +9,8 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/quill/cmd/quill/cli/options"
-	"github.com/anchore/quill/internal/bus"
+	"github.com/goreleaser/quill/cmd/quill/cli/options"
+	"github.com/goreleaser/quill/internal/bus"
 )
 
 type p12DescribeConfig struct {
