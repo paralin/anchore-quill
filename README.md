@@ -1,3 +1,13 @@
+# quill fork
+
+this is a fork of quill, by anchore
+
+goreleaser uses quill to notarize and sign, but we don't need the TUI stuff.
+This wasnt a problem until recently, as quill is still using older versions of
+some libraries which are conflicting with other libraries goreleaser uses.
+
+this is hopefully a temporary fork.
+
 # Quill
 
 Simple mac binary signing and notarization from any platform (replacing the `codesign` utility for simple use cases).
