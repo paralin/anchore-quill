@@ -5,8 +5,6 @@ import (
 
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/go-progress"
-
-	"github.com/anchore/bubbly"
 )
 
 type ErrBadPayload struct {
@@ -32,19 +30,6 @@ func checkEventType(actual, expected partybus.EventType) error {
 		return newPayloadErr(expected, "Type", actual)
 	}
 	return nil
-}
-
-func ParseCLIInputPromptType(e partybus.Event) (bubbly.PromptWriter, error) {
-	if err := checkEventType(e.Type, CLIInputPromptType); err != nil {
-		return nil, err
-	}
-
-	p, ok := e.Value.(bubbly.PromptWriter)
-	if !ok {
-		return nil, newPayloadErr(e.Type, "Value", e.Value)
-	}
-
-	return p, nil
 }
 
 func ParseCLIReportType(e partybus.Event) (string, string, error) {

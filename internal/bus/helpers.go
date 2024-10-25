@@ -4,7 +4,6 @@ import (
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/go-progress"
 
-	"github.com/anchore/bubbly"
 	"github.com/goreleaser/quill/internal/redact"
 	"github.com/goreleaser/quill/quill/event"
 )
@@ -60,18 +59,4 @@ func Notify(message string) {
 		Type:  event.CLINotificationType,
 		Value: redact.Apply(message),
 	})
-}
-
-func PromptForInput(message string, sensitive bool, validators ...func(string) error) *bubbly.Prompter {
-	if publisher == nil {
-		// prevent any further actions taken on the report (such as redaction) since it won't be published anyway
-		return nil
-	}
-	p := bubbly.NewPrompter(redact.Apply(message), sensitive, validators...)
-	publish(partybus.Event{
-		Type:  event.CLIInputPromptType,
-		Value: bubbly.PromptWriter(p),
-	})
-
-	return p
 }
